@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Dallin Hatch</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="https://lh3.googleusercontent.com/pw/AL9nZEVNI1une8Ca2Ur_GCMrQlzQXWHtJShKQRtEHzUEdWM02eHWTQpcJNC7P6_9txlPFw3JWk483f-Wl6oE0Bp8-jS5yDzQ9sajyefuZqSZGC8C4GCmTHv8hxLTX2Q030H7FPHuAVuswIBrG8g3LL82xOAh=s732-no?authuser=0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+      }
+
+      /* Style the top navigation bar */
+      .navbar {
+        overflow: hidden;
+        background-color: #333;
+      }
+
+      /* Column container */
+      .row {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      /* Create two unequal columns that sits next to each other */
+      /* Sidebar/left column */
+      .side {
+        flex: 30%;
+        background-color: black;
+        padding: 20px;
+        color: #aaa;
+      }
+
+      /* Main column */
+      .main {
+        flex: 70%;
+        background-color: rgb(27, 27, 27);
+        padding: 20px;
+        color: white;
+        font-family: "Caveat", cursive;
+      }
+
+      .dimg {
+        width: 100%;
+        height: 120%;
+      }
+
+      .bio {
+        font-family: "Caveat", cursive;
+        font-size: large;
+      }
+
+      
+      /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+      @media screen and (max-width: 700px) {
+        .row {
+          flex-direction: column;
+        }
+      }
+
+      /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+      @media screen and (max-width: 400px) {
+        .navbar a {
+          float: none;
+          width: 100%;
+        }
+      }
+
+      body,
+      html {
+        height: 100%;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      .bg-image {
+        /* The image used */
+        background-image: url("https://lh3.googleusercontent.com/pw/AL9nZEXA3eP1A1FyWW8GGPAOzjtxFMFnGjmRLY0ES_0a-fraa8Wmw5PMl4a1pcH3v4WGYtSxKR-7g_z0IfuHKIENCpReFZDJBh9A3ffRxBoSh5WBOnCWnDlWPsb598Y-6lRyNMj0YYKOk9FjXbE4Um6aWj2B=w603-h757-no?authuser=0");
+
+        /* Add the blur effect */
+        /*filter: blur(0px);
+        -webkit-filter: blur(0px);*/
+
+        /* Full height */
+        height: 100%;
+
+        /* Center and scale the image nicely */
+        background-position: 50% 25%;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      /* Position text in the middle of the page/image */
+      .bg-text {
+        background-color: rgb(0, 0, 0); /* Fallback color */
+        background-color: rgba(0, 0, 0, 0); /* Black w/opacity/see-through */
+        color: white;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+        width: 80%;
+        text-align: center;
+        font-family: "Caveat", cursive;
+        font-size: 5vw;
+      }
+
+      /* width */
+      ::-webkit-scrollbar {
+        width: 10px;
+      }
+
+      /* Track */
+      ::-webkit-scrollbar-track {
+        background: rgb(27, 27, 27);
+      }
+
+      /* Handle */
+      ::-webkit-scrollbar-thumb {
+        background: #888;
+      }
+
+      /* Handle on hover */
+      ::-webkit-scrollbar-thumb:hover {
+        background: #62beb9;
+      }
+
+      .button {
+        background-color: #e7e7e7;
+        border: none;
+        color: white;
+        padding: 16px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 20px;
+        margin: 4px 2px;
+        transition-duration: 0.4s;
+        cursor: pointer;
+        border-radius: 7px;
+        width: 100%;
+        font-family: "Caveat", cursive;
+      }
+
+      .button4 {
+        background-color: #62beb9;
+        color: black;
+        border: 2px solid #000000;
+      }
+
+      .button4:hover {
+        background-color: #2a807b;
+      }
+
+      a:link {
+        color: #62beb9;
+        text-decoration: none;
+      }
+      a:visited {
+        color: #62beb9;
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+
+      ::selection {
+        background: #62beb9;
+        color: #000000;
+      }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      * {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+
+
+
+
+
+
+
+
+
+.spotify {
+    font-size:larger;
+}
+
+    /* Footer */
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #142525;
+    font-family: "Caveat", cursive;
+    width: 100%;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+        }
+
+
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    color: white;
+}
+
+.fa:hover {
+    opacity: 0.7;
+    text-decoration: none;
+}
+
+
+
+
+    </style>
+  </head>
+  <body>
+    <div class="bg-image"></div>
+
+    <div class="bg-text">
+      <h1>Dallin Hatch</h1>
+    </div>
+
+    <div class="row">
+      <div class="side">
+        <p>
+          <img
+            class="dimg"
+            src="https://i.scdn.co/image/ab6761670000ecd4642e9d76ec22469846deb76f"
+          />
+          <br />
+          <br />
+        </p>
+        <!-- DallinHatchMusic.com was created by moshuajock -->
+        <div class="bio">
+          <p>
+            <p>
+            Armed with only an iPhone and a dream, Dallin Hatch began writing his first songs at the age of 15. Fast forward to 21, Hatch has already captivated the hearts of millions of viewers and listeners on the ever popular app, TikTok. Hatch is known for his piercing and raw vocals. Originals like, "A Part of Me" or "The Internet" are just a few examples of his openness with the public eye. Hatch truly wears his heart on his sleeve. Now surpassing over 200,000 + streams with music made using only an iPhone, Hatch continues to put his energy into creating emotionally packed songs which is seen throughout his discography.
+          </p>
+          <p>
+            If you would like to help support his dream of getting better equipment and recording music: <u><b> Dallin-Hatch-6 </b></u>
+            
+          </p>
+          <p>ANYTHING HELPS!</p>
+        </div>
+      </div>
+       <div class="main">
+        <!-- 
+        <h2>FOR THE BEST</h2>
+        <h3>Lyric Video</h3>
+        <iframe
+          width="100%"
+          height="300px"
+          src="https://www.youtube.com/embed/o7c3DDRfOY4?controls=0"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>-->    
+        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/artist/1sYWVBoJhOJxkPapuFYwFD?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        <p>
+          Listen on
+          <a
+            href="https://open.spotify.com/artist/1sYWVBoJhOJxkPapuFYwFD?si=01_xraRSSdeanJ0YdNvQQw"
+            >Spotify</a
+          >
+          and <a href="https://www.youtube.com/@dallinhatchmusic">Youtube</a>
+        </p>
+
+        <br />
+        <a href="https://linktr.ee/DallinHatch"
+          ><button class="button button4">My LinkTree</button></a
+        >
+        <p><br \></p>
+    
+
+
+
+      <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/2yRZLsAbIr5f17VvqMFW5Z?utm_source=generator" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/2f0e8wxsGZTfZ26nuDuDtK?utm_source=generator" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>          
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/5b2IZVLlmDQUCYFS5jU4HW?utm_source=generator" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>        </div>
+        
+        
+        
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span> 
+        </div>
+        
+        <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+        </script>
+
+
+        <div>
+            <p class="spotify">
+                <a href="https://open.spotify.com/artist/1sYWVBoJhOJxkPapuFYwFD?si=iX8PtukpTh2UnbPybnj8TQ">Listen to more on spotify</a>
+            </p>
+        </div>
+
+
+    </div>
+
+    <div class="footer">
+        <a href="https://www.tiktok.com/@dallinhatchmusic?lang=en" style="text-decoration: none;">
+            <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="29" height="29" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="#62beb9" d="M12.525.02c1.31-.02 2.61-.01 3.91-.02c.08 1.53.63 3.09 1.75 4.17c1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97c-.57-.26-1.1-.59-1.62-.93c-.01 2.92.01 5.84-.02 8.75c-.08 1.4-.54 2.79-1.35 3.94c-1.31 1.92-3.58 3.17-5.91 3.21c-1.43.08-2.86-.31-4.08-1.03c-2.02-1.19-3.44-3.37-3.65-5.71c-.02-.5-.03-1-.01-1.49c.18-1.9 1.12-3.72 2.58-4.96c1.66-1.44 3.98-2.13 6.15-1.72c.02 1.48-.04 2.96-.04 4.44c-.99-.32-2.15-.23-3.02.37c-.63.41-1.11 1.04-1.36 1.75c-.21.51-.15 1.07-.14 1.61c.24 1.64 1.82 3.02 3.5 2.87c1.12-.01 2.19-.66 2.77-1.61c.19-.33.4-.67.41-1.06c.1-1.79.06-3.57.07-5.36c.01-4.03-.01-8.05.02-12.07z"/></svg>        <a href="https://open.spotify.com/artist/1sYWVBoJhOJxkPapuFYwFD?si=P8AJo-QvTKqnBoTg_-CvCA" class="	fa fa-spotify"></a>
+        <a href="https://www.youtube.com/@dallinhatchmusic" class="fa fa-youtube"></a>
+        <a href="https://www.instagram.com/dallin_hatch_music_/" class="fa fa-instagram"></a>
+    </div>
+  </body>
+</html>
